@@ -35,11 +35,11 @@ public class SurroundingActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility( uiOption );
 
 
-        Button button_facility = findViewById(R.id.menu_facility); //공공시설 이미지 버튼 객체 참조
-        Button button_subway = findViewById(R.id.menu_subway); //지하철 이미지 버튼 객체 참조
-        Button button_restroom = findViewById(R.id.menu_restroom); //화장실 이미지 버튼 객체 참조
-        Button button_hospital = findViewById(R.id.menu_hospital); //병원 이미지 버튼 객체 참조
-        Button button_pharmacy = findViewById(R.id.menu_pharmacy); //약국 이미지 버튼 객체 참조
+        Button button_facility = findViewById(R.id.menu_facility); //공공시설 버튼 객체 참조
+        Button button_subway = findViewById(R.id.menu_subway); //지하철 버튼 객체 참조
+        Button button_restroom = findViewById(R.id.menu_restroom); //화장실 버튼 객체 참조
+        Button button_hospital = findViewById(R.id.menu_hospital); //병원 버튼 객체 참조
+        Button button_pharmacy = findViewById(R.id.menu_pharmacy); //약국 버튼 객체 참조
 
         Button button_previous = findViewById(R.id.previous); //이전 이미지 버튼 객체 참조
         Button button_home = findViewById(R.id.home); // 홈 이미지 버튼 객체 참조
@@ -49,16 +49,6 @@ public class SurroundingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SurroundingActivity.this, FacilityActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        //지하철역 버튼 누를 시 화면 전환
-        button_subway.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SurroundingActivity.this, SubwayActivity.class);
                 startActivity(intent);
                 finish();
             }

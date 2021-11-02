@@ -6,124 +6,127 @@
     android:layout_height="match_parent"
     tools:context=".SettingActivity">
 
-    <!-- 설정 -->
+    <!-- 주변시설 - 공공기관 카테고리 -->
+
     <RelativeLayout
-        android:id="@+id/주변시설선택"
+        android:id="@+id/background"
         android:layout_width="411dp"
         android:layout_height="823dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="216dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="2009dp"
         android:background="@drawable/background"
         tools:ignore="MissingConstraints">
 
-        <!-- list_button -->
-        <RelativeLayout
-            android:id="@+id/list_menu"
-            android:layout_width="411dp"
-            android:layout_height="318dp"
-            android:layout_marginTop="156dp"
-            tools:ignore="MissingConstraints">
-
-            <!-- help -->
-            <ImageButton
-                android:id="@+id/help"
-                android:layout_width="395dp"
-                android:layout_height="90dp"
-                android:layout_marginLeft="8dp"
-                android:background="@drawable/help_button" />
-
-            <!-- logout -->
-
-            <!-- withdraw -->
-            <ImageButton
-                android:id="@+id/btn_logout"
-                android:layout_width="395dp"
-                android:layout_height="90dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="114dp"
-                android:background="@drawable/logout_button" />
-
-            <ImageButton
-                android:id="@+id/btn_withdraw"
-                android:layout_width="395dp"
-                android:layout_height="90dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="228dp"
-                android:background="@drawable/withdraw_button" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/list_button"
-            android:layout_width="411dp"
-            android:layout_height="84dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"
-            tools:ignore="MissingConstraints">
-
-            <!-- previous_button -->
-            <ImageButton
-                android:id="@+id/previous"
-                android:layout_width="205dp"
-                android:layout_height="84dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/previous_button"
-                tools:ignore="MissingConstraints" />
-
-            <!-- home_button -->
-            <ImageButton
-                android:id="@+id/home"
-                android:layout_width="205dp"
-                android:layout_height="84dp"
-                android:layout_marginLeft="205dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/home_button" />
-        </RelativeLayout>
-
     </RelativeLayout>
 
-    <!-- bar_top -->
     <RelativeLayout
-        android:id="@+id/bar_top"
+        android:id="@+id/title_setting"
         android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+        android:layout_height="92dp"
+        android:background="@drawable/frame_29"
         tools:ignore="MissingConstraints">
 
-
-        <!-- title_setting -->
-        <RelativeLayout
-            android:id="@+id/title_setting"
-            android:layout_width="411dp"
-            android:layout_height="92dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="0dp"
-            android:background="@drawable/title_setting">
-
-            <!-- 설정 -->
-            <TextView
-                android:id="@+id/설정"
-                android:layout_width="67dp"
-                android:layout_height="54dp"
-                android:layout_marginLeft="172dp"
-                android:layout_marginTop="19dp"
-                android:gravity="center_horizontal|center_vertical"
-                android:lineSpacingExtra="10sp"
-                android:text="설정"
-                android:textColor="@color/white"
-                android:textSize="36dp"
-                android:textStyle="bold"
-                android:fontFamily="@font/inter_medium"/>
-        </RelativeLayout>
+        <!-- 설정 -->
+        <TextView
+            android:id="@+id/categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_marginLeft="172dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:text="설정"
+            android:textColor="@color/white"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter_medium"/>
     </RelativeLayout>
 
+    <!-- 도움말 -->
+    <Button
+        android:id="@+id/help"
+        android:layout_width="395dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/default_yellow"
+        android:fontFamily="@font/inter_medium"
+        android:text="도움말"
+        android:textColor="@color/yellow"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <!-- 로그아웃 -->
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="395dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/default_yellow"
+        android:fontFamily="@font/inter_medium"
+        android:text="로그아웃"
+        android:textColor="@color/yellow"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/help"
+        tools:ignore="MissingConstraints" />
+
+    <!-- 회원탈퇴 -->
+    <Button
+        android:id="@+id/withdraw"
+        android:layout_width="395dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/default_yellow"
+        android:fontFamily="@font/inter_medium"
+        android:text="회원탈퇴"
+        android:textColor="@color/yellow"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logout"
+        tools:ignore="MissingConstraints" />
+
+    <!-- 홈 버튼 -->
+    <Button
+        android:id="@+id/home"
+        android:layout_width="205dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="739dp"
+        android:background="@drawable/frame_32"
+        android:fontFamily="@font/inter_medium"
+        android:text="홈"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <!-- 이전 버튼 -->
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="205dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="739dp"
+        android:background="@drawable/frame_32"
+        android:fontFamily="@font/inter_medium"
+        android:text="이전"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/home"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

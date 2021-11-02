@@ -45,11 +45,11 @@ public class SettingActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
             uiOption |= View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
         decorView.setSystemUiVisibility(uiOption);
-        ImageButton button_help = findViewById(R.id.help); //도움말 이미지 버튼 객체 참조
-        ImageButton btn_withdraw = findViewById(R.id.btn_withdraw); //회원탈퇴 이미지 버튼 객체 참조
-        Button button_previous = findViewById(R.id.previous); //이전 이미지 버튼 객체 참조
-        Button button_home = findViewById(R.id.home); // 홈 이미지 버튼 객체 참조
-        ImageButton btn_logout = (ImageButton) findViewById(R.id.btn_logout); //로그아웃 버튼 객체 참조
+        Button button_help = findViewById(R.id.help); //도움말 버튼 객체 참조
+        Button button_withdraw = findViewById(R.id.withdraw); //회원탈퇴 버튼 객체 참조
+        Button button_previous = findViewById(R.id.previous); //이전 버튼 객체 참조
+        Button button_home = findViewById(R.id.home); // 홈 버튼 객체 참조
+        Button button_logout = findViewById(R.id.logout); //로그아웃 버튼 객체 참조
 
         //이전 버튼 누를 시 화면 전환
         button_previous.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +73,7 @@ public class SettingActivity extends AppCompatActivity {
 
 
         //로그아웃 버튼 클릭시 동작
-        btn_logout.setOnClickListener(new View.OnClickListener() {
+        button_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.v("알림", "구글 LOGOUT");
@@ -106,7 +106,7 @@ public class SettingActivity extends AppCompatActivity {
         });
 
         //회원탈퇴 버튼 클릭시 동작
-        btn_withdraw.setOnClickListener(new View.OnClickListener() {
+        button_withdraw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder alt_bld = new AlertDialog.Builder(view.getContext());
