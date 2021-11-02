@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SubwayActivity">
 
-    <!-- 주변시설 - 지하철 카테고리 -->
+    <!-- 주변시설 - 지하철역 카테고리 -->
 
     <RelativeLayout
         android:id="@+id/background"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- 지하철1 -->
+            <!-- 지하철역1 -->
             <Button
                 android:id="@+id/subway1"
                 android:layout_width="395dp"

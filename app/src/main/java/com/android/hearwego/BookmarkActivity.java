@@ -39,8 +39,8 @@ public class BookmarkActivity extends AppCompatActivity {
         Button button_bookmark3 = findViewById(R.id.bookmark3);
         Button button_bookmark4 = findViewById(R.id.bookmark4);
 
-        ImageButton button_previous = findViewById(R.id.previous); //이전 이미지 버튼 객체 참조
-        ImageButton button_home = findViewById(R.id.home); // 홈 이미지 버튼 객체 참조
+        Button button_previous = findViewById(R.id.previous); //이전 이미지 버튼 객체 참조
+        Button button_home = findViewById(R.id.home); // 홈 이미지 버튼 객체 참조
 
         //즐겨찾기 버튼
         button_bookmark1.setOnClickListener(new View.OnClickListener() {

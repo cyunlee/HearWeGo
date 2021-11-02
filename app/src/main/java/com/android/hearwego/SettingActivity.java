@@ -47,8 +47,8 @@ public class SettingActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOption);
         ImageButton button_help = findViewById(R.id.help); //도움말 이미지 버튼 객체 참조
         ImageButton btn_withdraw = findViewById(R.id.btn_withdraw); //회원탈퇴 이미지 버튼 객체 참조
-        ImageButton button_previous = findViewById(R.id.previous); //이전 이미지 버튼 객체 참조
-        ImageButton button_home = findViewById(R.id.home); // 홈 이미지 버튼 객체 참조
+        Button button_previous = findViewById(R.id.previous); //이전 이미지 버튼 객체 참조
+        Button button_home = findViewById(R.id.home); // 홈 이미지 버튼 객체 참조
         ImageButton btn_logout = (ImageButton) findViewById(R.id.btn_logout); //로그아웃 버튼 객체 참조
 
         //이전 버튼 누를 시 화면 전환
