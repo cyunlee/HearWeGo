@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SurroundingActivity">
 
-    <!-- 주변시설 -->
+    <!-- 주변 시설 선택 -->
     <RelativeLayout
         android:id="@+id/background"
         android:layout_width="411dp"
@@ -15,32 +15,38 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/background"
         tools:ignore="MissingConstraints">
-
-        <!-- bar_top -->
-
-        <!-- Frame Menu-->
-
-        <!-- list_button -->
-
     </RelativeLayout>
 
-    <ImageButton
-        android:id="@+id/previous"
-        android:layout_width="205dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="739dp"
-        android:background="@drawable/previous_button"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
+    <!-- 홈 버튼 -->
+    <Button
         android:id="@+id/home"
         android:layout_width="205dp"
         android:layout_height="84dp"
+        android:layout_marginTop="739dp"
+        android:background="@drawable/frame_32"
+        android:fontFamily="@font/inter_medium"
+        android:text="홈"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <!-- 이전 버튼 -->
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="205dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="739dp"
-        android:background="@drawable/home_button"
-        app:layout_constraintLeft_toRightOf="@+id/previous"
+        android:background="@drawable/frame_32"
+        android:fontFamily="@font/inter_medium"
+        android:text="이전"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/home"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -54,7 +60,7 @@
         <!-- 주변시설 선택 -->
         <TextView
             android:id="@+id/주변시설선택"
-            android:layout_width="208dp"
+            android:layout_width="wrap_content"
             android:layout_height="54dp"
             android:layout_marginLeft="101.5dp"
             android:layout_marginTop="19dp"
@@ -67,62 +73,93 @@
             android:fontFamily="@font/inter_medium"/>
     </RelativeLayout>
 
-    <ImageButton
+    <!-- 공공기관 버튼 -->
+    <Button
         android:id="@+id/menu_facility"
         android:layout_width="395dp"
         android:layout_height="90dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="124dp"
-        android:background="@drawable/facility"
+        android:background="@drawable/default_yellow"
+        android:fontFamily="@font/inter_medium"
+        android:text="공공기관"
+        android:textColor="@color/yellow"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toTopOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
+    <!-- 지하철역 버튼 -->
+    <Button
         android:id="@+id/menu_subway"
         android:layout_width="395dp"
         android:layout_height="90dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/subway"
+        android:background="@drawable/default_yellow"
+        android:fontFamily="@font/inter_medium"
+        android:text="지하철역"
+        android:textColor="@color/yellow"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menu_facility"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/menu_toilet"
+    <!-- 화장실 버튼 -->
+    <Button
+        android:id="@+id/menu_restroom"
         android:layout_width="395dp"
         android:layout_height="90dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/toilet"
+        android:background="@drawable/default_yellow"
+        android:fontFamily="@font/inter_medium"
+        android:text="화장실"
+        android:textColor="@color/yellow"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menu_subway"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
+    <!-- 병원 버튼 -->
+    <Button
         android:id="@+id/menu_hospital"
         android:layout_width="395dp"
         android:layout_height="90dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/hospital"
+        android:background="@drawable/default_yellow"
+        android:fontFamily="@font/inter_medium"
+        android:text="병원"
+        android:textColor="@color/yellow"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_toilet"
+        app:layout_constraintTop_toBottomOf="@+id/menu_restroom"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
+    <!-- 약국 버튼 -->
+    <Button
         android:id="@+id/menu_pharmacy"
         android:layout_width="395dp"
         android:layout_height="90dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/pharmacy"
+        android:background="@drawable/default_yellow"
+        android:fontFamily="@font/inter_medium"
+        android:text="약국"
+        android:textColor="@color/yellow"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menu_hospital"
         tools:ignore="MissingConstraints" />

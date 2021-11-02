@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
         <activity android:name=".ResultActivity"/>
-        <activity android:name=".SurroundingChoice" />
+        <activity android:name=".SurroundingChoiceActivity" />
         <activity android:name=".BookmarkEdit" />
         <activity android:name=".RouteGuideActivity" />
         <activity android:name=".RouteChoiceActivity" />
@@ -37,6 +37,7 @@
         <activity android:name=".PharmacyActivity"/>
         <activity android:name=".SubwayActivity"/>
         <activity android:name=".RestroomActivity"/>
+        <activity android:name=".AddBookmarkActivity"/>
 
     </application>
 

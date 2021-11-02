@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SubwayActivity extends AppCompatActivity {
+public class AddBookmarkActivity extends AppCompatActivity {
 
     private View decorView; //full screen 객체 선언
     private int	uiOption; //full screen 객체 선언
@@ -18,7 +18,7 @@ public class SubwayActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.category_subway);
+        setContentView(R.layout.category_facility);
 
         ActionBar actionBar = getSupportActionBar(); //액션바(패키지명) 숨김처리
         actionBar.hide();
@@ -34,25 +34,16 @@ public class SubwayActivity extends AppCompatActivity {
             uiOption |= View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
         decorView.setSystemUiVisibility(uiOption);
 
-        Button button_subway1 = findViewById(R.id.subway1);
+        Button button_facility1 = findViewById(R.id.facility1);
         ImageButton button_previous = findViewById(R.id.previous); //이전 이미지 버튼 객체 참조
         ImageButton button_home = findViewById(R.id.home); // 홈 이미지 버튼 객체 참조
 
-        //지하철역1 누를 시 화면 전환
-        button_subway1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SubwayActivity.this, SurroundingChoiceActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         //이전 버튼 누를 시 화면 전환
         button_previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SubwayActivity.this, SurroundingActivity.class);
+                Intent intent = new Intent(AddBookmarkActivity.this, SurroundingActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -62,7 +53,7 @@ public class SubwayActivity extends AppCompatActivity {
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SubwayActivity.this, HomeActivity.class);
+                Intent intent = new Intent(AddBookmarkActivity.this, HomeActivity.class);
                 startActivity(intent);
                 finish();
             }

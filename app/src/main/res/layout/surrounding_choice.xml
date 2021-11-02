@@ -5,8 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A8A8A8">
-    <!-- Frame 29 -->
+    android:background="#A8A8A8"
+    tools:context=".SurroundingChoiceActivity">
+
 
     <RelativeLayout
         android:id="@+id/frame_29"

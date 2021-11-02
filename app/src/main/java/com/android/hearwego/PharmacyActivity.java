@@ -1,6 +1,5 @@
 package com.android.hearwego;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -42,7 +41,7 @@ public class PharmacyActivity extends AppCompatActivity {
         button_pharmacy1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PharmacyActivity.this, SurroundingChoice.class);
+                Intent intent = new Intent(PharmacyActivity.this, SurroundingChoiceActivity.class);
                 startActivity(intent);
                 finish();
             }

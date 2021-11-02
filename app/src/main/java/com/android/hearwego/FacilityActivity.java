@@ -1,6 +1,5 @@
 package com.android.hearwego;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -43,7 +42,7 @@ public class FacilityActivity extends AppCompatActivity{
         button_facility1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FacilityActivity.this, SurroundingChoice.class);
+                Intent intent = new Intent(FacilityActivity.this, SurroundingChoiceActivity.class);
                 startActivity(intent);
                 finish();
             }

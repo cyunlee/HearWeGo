@@ -209,26 +209,36 @@
     </ScrollView>
 
 
-    <!-- 이전 버튼 -->
-    <ImageButton
-        android:id="@+id/previous"
+    <!-- 홈 버튼 -->
+    <Button
+        android:id="@+id/home"
         android:layout_width="205dp"
         android:layout_height="84dp"
         android:layout_marginTop="739dp"
-        android:background="@drawable/previous_button"
+        android:background="@drawable/frame_32"
+        android:fontFamily="@font/inter_medium"
+        android:text="홈"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <!-- 홈 버튼 -->
-    <ImageButton
-        android:id="@+id/home"
+    <!-- 이전 버튼 -->
+    <Button
+        android:id="@+id/previous"
         android:layout_width="205dp"
         android:layout_height="84dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="739dp"
-        android:background="@drawable/home_button"
-        app:layout_constraintLeft_toRightOf="@+id/previous"
+        android:background="@drawable/frame_32"
+        android:fontFamily="@font/inter_medium"
+        android:text="이전"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/home"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 

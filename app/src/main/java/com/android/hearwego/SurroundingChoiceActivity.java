@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class SurroundingChoice extends AppCompatActivity {
+public class SurroundingChoiceActivity extends AppCompatActivity {
 
     private View decorView; //full screen 객체 선언
     private int	uiOption; //full screen 객체 선언
@@ -59,7 +59,7 @@ public class SurroundingChoice extends AppCompatActivity {
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SurroundingChoice.this, HomeActivity.class);
+                Intent intent = new Intent(SurroundingChoiceActivity.this, HomeActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -85,7 +85,7 @@ public class SurroundingChoice extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 /*인텐트 보냄*/
-                Intent dest_intent = new Intent(SurroundingChoice.this, RouteGuideActivity.class);
+                Intent dest_intent = new Intent(SurroundingChoiceActivity.this, RouteGuideActivity.class);
                 dest_intent.putExtra("name", nameData);
                 dest_intent.putExtra("latitude", latitude);
                 dest_intent.putExtra("longitude", longitude);
